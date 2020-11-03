@@ -1,0 +1,37 @@
+.title-clients {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: $title-light-theme-colour;
+  text-align: center;
+  margin-top: 94px;
+  padding-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}

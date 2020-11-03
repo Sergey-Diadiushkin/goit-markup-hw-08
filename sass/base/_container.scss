@@ -1,0 +1,59 @@
+.container {
+  width: 1200;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  & .about-list {
+    display: flex;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .clients & {
+    margin-bottom: 94px;
+    width: 1200px;
+  }
+
+  .footer & {
+    display: flex;
+    width: 1200px;
+    height: 252px;
+    padding: 60px 15px;
+  }
+
+  &-img {
+    position: relative;
+  }
+
+  .header & {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding: 0 15px;
+  }
+
+  .hero & {
+    text-align: center;
+    padding-top: 81px;
+  }
+
+  .qualitys & {
+    display: flex;
+    width: 1200px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  .projects & {
+    width: 1200px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+
+  .command & {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
