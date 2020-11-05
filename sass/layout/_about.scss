@@ -37,14 +37,6 @@
   padding-bottom: 50px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero {
-    background-image: url("../images/hero/bg-desktop@2x.jpg");
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .about {
     display: none;

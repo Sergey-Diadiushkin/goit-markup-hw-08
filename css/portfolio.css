@@ -50,6 +50,12 @@ img {
     position: relative;
     padding: 0 15px;
   }
+  .command .container {
+    width: 480px;
+  }
+  .clients .container {
+    width: 480px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -64,6 +70,13 @@ img {
   }
   .qualitys .container {
     display: flex;
+    width: 768px;
+  }
+  .command .container {
+    display: flex;
+    width: 768px;
+  }
+  .clients .container {
     width: 768px;
   }
 }
@@ -86,6 +99,13 @@ img {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+  }
+  .command .container {
+    display: flex;
+    width: 1200px;
+  }
+  .clients .container {
+    width: 1200px;
   }
 }
 

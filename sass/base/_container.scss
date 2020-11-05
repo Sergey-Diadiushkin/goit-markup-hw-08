@@ -14,6 +14,12 @@
       position: relative;
       padding: 0 15px;
     }
+    .command & {
+      width: 480px;
+    }
+    .clients & {
+      width: 480px;
+    }
   }
 }
 
@@ -29,6 +35,13 @@
 
     .qualitys & {
       display: flex;
+      width: 768px;
+    }
+    .command & {
+      display: flex;
+      width: 768px;
+    }
+    .clients & {
       width: 768px;
     }
   }
@@ -53,6 +66,13 @@
       width: 1200px;
       padding: 0 15px;
       margin: 0 auto;
+    }
+    .command & {
+      display: flex;
+      width: 1200px;
+    }
+    .clients & {
+      width: 1200px;
     }
   }
 }

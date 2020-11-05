@@ -50,6 +50,12 @@ img {
     position: relative;
     padding: 0 15px;
   }
+  .command .container {
+    width: 480px;
+  }
+  .clients .container {
+    width: 480px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -64,6 +70,13 @@ img {
   }
   .qualitys .container {
     display: flex;
+    width: 768px;
+  }
+  .command .container {
+    display: flex;
+    width: 768px;
+  }
+  .clients .container {
     width: 768px;
   }
 }
@@ -86,6 +99,13 @@ img {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+  }
+  .command .container {
+    display: flex;
+    width: 1200px;
+  }
+  .clients .container {
+    width: 1200px;
   }
 }
 
@@ -412,6 +432,27 @@ img {
 
 .social-list-link:hover .social-list-svg {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .social-list {
+    margin-left: 122px;
+    margin-right: 122px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }
 
 .navigation-btn {
@@ -848,12 +889,6 @@ img {
   padding-bottom: 50px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero {
-    background-image: url("../images/hero/bg-desktop@2x.jpg");
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .about {
     display: none;
@@ -861,33 +896,42 @@ img {
 }
 
 .names-list {
-  display: flex;
-  margin-bottom: 94px;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .names-list-item {
+  width: 450px;
+  height: 622px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .names-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.names-list-img {
+  max-width: 100%;
+  height: 460px;
 }
 
 .command {
   background-color: #f5f4fa;
-  height: 708px;
+  height: 100%;
+  padding-bottom: 60px;
 }
 
 .title-our-command {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 
@@ -915,31 +959,81 @@ img {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .names-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
+  }
+  .names-list-item {
+    width: 354px;
+    height: 536px;
+  }
+  .names-list-img {
+    max-width: 100%;
+    height: 374px;
+  }
+  .title-our-command {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .names-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1200px;
+  }
+  .names-list-item {
+    width: 270px;
+    height: 428px;
+  }
+  .names-list-img {
+    max-width: 100%;
+    height: 260px;
+  }
+  .title-our-command {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .title-clients {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-top: 94px;
-  padding-bottom: 50px;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  justify-content: space-between;
 }
 
 .clients-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -951,6 +1045,25 @@ img {
 .clients-link:hover {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
+  .clients-list {
+    flex-wrap: nowrap;
+  }
+  .title-clients {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .footer {
