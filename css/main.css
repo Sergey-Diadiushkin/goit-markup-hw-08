@@ -56,6 +56,12 @@ img {
   .clients .container {
     width: 480px;
   }
+  .footer .container {
+    display: block;
+    width: 480px;
+    height: 603px;
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -78,6 +84,14 @@ img {
   }
   .clients .container {
     width: 768px;
+  }
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
+    height: 603px;
+    padding: 60px 15px;
   }
 }
 
@@ -107,6 +121,12 @@ img {
   .clients .container {
     width: 1200px;
   }
+  .footer .container {
+    display: flex;
+    width: 1200px;
+    height: 252px;
+    padding: 60px 15px;
+  }
 }
 
 .logo-color {
@@ -121,7 +141,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-right: 93px;
 }
 
 @media screen and (min-width: 768px) {
@@ -566,18 +585,18 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .adress .list {
+  .header .adress .list {
     display: flex;
     margin-left: 305px;
   }
 }
 
-.adress .list .header-link {
+.header .adress .list .header-link {
   margin-right: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  .adress .list .header-link {
+  .header .adress .list .header-link {
     margin-right: 0;
   }
 }
@@ -1136,27 +1155,37 @@ img {
 }
 
 .footer-contact-form-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 4px;
   padding: 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .footer-email-form {
-  display: flex;
-  width: 100%;
+  display: block;
+}
+
+.footer.logo-navigation-list-link {
+  margin-right: 0;
 }
 
 .adress {
-  margin-right: 70px;
+  text-align: center;
 }
 
 .adress.logo-navigation-list-link {
   display: block;
   margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.social-link {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .social-link-footer-title {
@@ -1171,14 +1200,14 @@ img {
 
 .social-link-footer-list {
   display: flex;
+  justify-content: center;
 }
 
 .email-form {
-  margin-left: 93px;
+  text-align: center;
 }
 
 .email-form-title {
-  width: 219px;
   height: 16px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1207,6 +1236,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   padding-left: 29px;
+  margin-left: 125px;
   color: #ffffff;
 }
 
@@ -1216,12 +1246,6 @@ img {
   height: 24px;
   margin-left: 10px;
   background-image: url(../images/send.svg);
-}
-
-.container-email-form {
-  display: flex;
-  width: 570px;
-  height: 86px;
 }
 
 .portfolio-title {

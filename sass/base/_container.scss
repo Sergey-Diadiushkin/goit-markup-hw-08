@@ -1,6 +1,3 @@
-.container {
-  //   outline: 1px solid red;
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -19,6 +16,12 @@
     }
     .clients & {
       width: 480px;
+    }
+    .footer & {
+      display: block;
+      width: 480px;
+      height: 603px;
+      padding: 60px 15px;
     }
   }
 }
@@ -43,6 +46,14 @@
     }
     .clients & {
       width: 768px;
+    }
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 768px;
+      height: 603px;
+      padding: 60px 15px;
     }
   }
 }
@@ -74,6 +85,12 @@
     .clients & {
       width: 1200px;
     }
+    .footer & {
+      display: flex;
+      width: 1200px;
+      height: 252px;
+      padding: 60px 15px;
+    }
   }
 }
 // .container {
@@ -100,9 +117,9 @@
 //     padding: 60px 15px;
 //   }
 
-//   &-img {
-//     position: relative;
-//   }
+// &-img {
+//   position: relative;
+// }
 
 //   .header & {
 //     display: flex;
