@@ -16,6 +16,7 @@
   </head>
   <body>
     <!-- header -->
+
     <header class="header">
       <div class="container">
         <nav class="navigation">
@@ -23,52 +24,79 @@
             class="logo-navigation-list-link link"
             href="./index.html"
             aria-label="логотип веб студия"
-            >Web<span class="logo-color">Studio</span>
-          </a>
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <div class="item-underline">
-                <a class="navigation-list-link link" href="./portfolio.html"
-                  >Портфолио</a
-                >
-                <div class="underline"></div>
-              </div>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="">Контакты</a>
-            </li>
-          </ul>
+            >Web<span class="logo-color">Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#menu-burger"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="nav">
+              <ul class="navigation-list list">
+                <li class="navigation-list-item">
+                  <a class="navigation-list-link link" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <div class="item-underline">
+                    <a class="navigation-list-link link" href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                    <div class="underline"></div>
+                  </div>
+                </li>
+                <li class="navigation-list-item">
+                  <a class="navigation-list-link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-contacts">
+              <address class="adress">
+                <ul class="list">
+                  <li class="header-link-item">
+                    <a class="header-link link" href="mailto:info@devstudio.com"
+                      ><svg class="header-link-svg">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li class="header-tel-link-item">
+                    <a class="header-tel-link link" href="tel:+380961111111"
+                      ><svg class="header-tel-link-svg">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
         </nav>
-        <address class="adress">
-          <ul class="list">
-            <li>
-              <a class="header-link link" href="mailto:info@devstudio.com">
-                <svg class="header-link-svg">
-                  <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a class="header-tel-link link" href="tel:+380961111111"
-                ><svg class="header-tel-link-svg">
-                  <use href="./images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
+
     <!-- projects -->
+
     <main>
-      <!-- <h1>Projects</h1> -->
       <section class="projects">
         <div class="container">
           <ul class="navigation-btn list">
@@ -93,6 +121,7 @@
               <a href=""
                 ><div class="projects-item-img-wrapper">
                   <img
+                    class="projects-item-img"
                     src="./images/Projects/display-macbook.jpg"
                     alt="display-macbook"
                   />
@@ -113,6 +142,7 @@
               <a href=""
                 ><div class="projects-item-img-wrapper">
                   <img
+                    class="projects-item-img"
                     src="./images/Projects/play-basketboll.jpg"
                     alt="play-basketboll"
                   />
@@ -132,7 +162,11 @@
             <li class="item">
               <a href=""
                 ><div class="projects-item-img-wrapper">
-                  <img src="./images/Projects/seafood.jpg" alt="seafood" />
+                  <img
+                    class="projects-item-img"
+                    src="./images/Projects/seafood.jpg"
+                    alt="seafood"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Технокряк это современная площадка распространения
@@ -150,6 +184,7 @@
               <a href="">
                 <div class="projects-item-img-wrapper">
                   <img
+                    class="projects-item-img"
                     src="./images/Projects/headphones.jpg"
                     alt="headphones"
                   />
@@ -169,7 +204,11 @@
             <li class="item">
               <a href="">
                 <div class="projects-item-img-wrapper">
-                  <img src="./images/Projects/boxes.jpg" alt="boxes" />
+                  <img
+                    class="projects-item-img"
+                    src="./images/Projects/boxes.jpg"
+                    alt="boxes"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Технокряк это современная площадка распространения
@@ -188,6 +227,7 @@
               <a href="">
                 <div class="projects-item-img-wrapper">
                   <img
+                    class="projects-item-img"
                     src="./images/Projects/monitor-of-computer.jpg"
                     alt="monitor of computer"
                   />
@@ -210,7 +250,11 @@
             <li class="item">
               <a href="">
                 <div class="projects-item-img-wrapper">
-                  <img src="./images/Projects/book.jpg" alt="book" />
+                  <img
+                    class="projects-item-img"
+                    src="./images/Projects/book.jpg"
+                    alt="book"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Технокряк это современная площадка распространения
@@ -227,7 +271,11 @@
             <li class="item">
               <a href="">
                 <div class="projects-item-img-wrapper">
-                  <img src="./images/Projects/label.jpg" alt="label" />
+                  <img
+                    class="projects-item-img"
+                    src="./images/Projects/label.jpg"
+                    alt="label"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Технокряк это современная площадка распространения
@@ -246,6 +294,7 @@
               <a href=""
                 ><div class="projects-item-img-wrapper">
                   <img
+                    class="projects-item-img"
                     src="./images/Projects/hands-on-keyboard.jpg"
                     alt="hands on keyboard"
                   />
@@ -353,5 +402,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

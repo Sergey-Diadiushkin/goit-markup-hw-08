@@ -1,10 +1,11 @@
 .navigation-btn {
   display: flex;
-  padding-top: 94px;
-  justify-content: center;
-
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 25px;
   &-item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
@@ -25,5 +26,19 @@
   &:focus {
     background-color: $accent-color;
     color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-btn {
+    flex-wrap: nowrap;
+    padding: 0 63px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-btn {
+    justify-content: center;
+    margin-bottom: 0;
   }
 }

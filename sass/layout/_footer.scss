@@ -1,5 +1,7 @@
 .footer {
   background-color: #2f303a;
+  max-width: 1600px;
+  margin: 0 auto;
 
   &-logo-color {
     color: #ffffff;
@@ -163,6 +165,27 @@
 }
 
 @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contact-form-input {
+    width: 358px;
+  }
+  .footer-email-form {
+    display: flex;
+  }
+  .email-form-btn {
+    margin-left: 0;
+  }
+  .social-link {
+    text-align: left;
+  }
+  .email-form {
+    text-align: left;
+  }
+  .adress {
+    text-align: left;
+  }
 }
 
 // .container-email-form {

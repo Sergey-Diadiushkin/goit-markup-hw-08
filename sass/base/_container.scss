@@ -23,6 +23,12 @@
       height: 603px;
       padding: 60px 15px;
     }
+    .projects & {
+      width: 480px;
+      padding: 60px 15px;
+      // margin-top: 94px;
+      // margin-bottom: 94px;
+    }
   }
 }
 
@@ -50,9 +56,13 @@
     .footer & {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 768px;
-      height: 603px;
+      height: 463px;
+      padding: 60px 15px;
+    }
+    .projects & {
+      width: 768px;
       padding: 60px 15px;
     }
   }
@@ -61,7 +71,6 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
 
     .hero & {
       width: 696px;
@@ -87,9 +96,14 @@
     }
     .footer & {
       display: flex;
+      justify-content: space-between;
       width: 1200px;
       height: 252px;
       padding: 60px 15px;
+    }
+    .projects & {
+      width: 1200px;
+      padding: 94px 15px;
     }
   }
 }
