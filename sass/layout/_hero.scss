@@ -2,7 +2,8 @@
   background-image: url("../images/hero/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   &-title {
     font-family: $main-font;
@@ -30,7 +31,7 @@
     background-image: url("../images/hero/bg-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 118px 204px;
+    // padding: 118px 204px;
     &-title {
       font-size: 26px;
       line-height: 42px;
@@ -50,7 +51,8 @@
     background-image: url("../images/hero/bg-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 252px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     &-title {
       font-size: 44px;

@@ -1,6 +1,5 @@
 .qualitys-list {
   display: block;
-  padding: 60px 15px;
 
   // &-item:not(:last-child) {
   //   margin-right: 30px;
@@ -53,7 +52,6 @@
 @media screen and (min-width: 768px) {
   .qualitys-list {
     display: flex;
-    padding: 60px 15px;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -69,7 +67,6 @@
 @media screen and (min-width: 1200px) {
   .qualitys-list {
     display: flex;
-    padding: 94px 15px;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 1200px;

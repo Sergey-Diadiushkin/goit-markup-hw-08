@@ -1,8 +1,19 @@
+.container {
+  outline: 1px solid black;
+  width: 1200;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .container {
     width: 100%;
     margin: 0 auto;
-    padding: 60px 15px;
+
+    .clients & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 }
 @media screen and (min-width: 480px) {
@@ -11,18 +22,27 @@
     margin: 0 auto;
 
     .hero & {
-      width: 360px;
+      // width: 360px;
       text-align: center;
     }
     .header & {
       position: relative;
       padding: 0 15px;
     }
+
+    .qualitys & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     .command & {
       width: 480px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
     .clients & {
       width: 480px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
     .footer & {
       display: block;
@@ -54,11 +74,9 @@
       width: 768px;
     }
     .command & {
-      display: flex;
       width: 768px;
     }
     .clients & {
-      padding: 0 15px;
       width: 768px;
     }
     .footer & {
@@ -81,22 +99,18 @@
     width: 1200px;
 
     .hero & {
-      width: 696px;
       text-align: center;
     }
     .qualitys & {
       display: flex;
       width: 1200px;
     }
-
-    & .about-list {
-      display: flex;
-      width: 1200px;
-      padding: 0 15px;
-      margin: 0 auto;
+    .about & {
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
+
     .command & {
-      display: flex;
       width: 1200px;
     }
     .clients & {

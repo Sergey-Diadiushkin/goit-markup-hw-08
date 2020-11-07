@@ -37,11 +37,21 @@ img {
   display: block;
 }
 
+.container {
+  outline: 1px solid black;
+  width: 1200;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .container {
     width: 100%;
     margin: 0 auto;
-    padding: 60px 15px;
+  }
+  .clients .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -51,18 +61,25 @@ img {
     margin: 0 auto;
   }
   .hero .container {
-    width: 360px;
     text-align: center;
   }
   .header .container {
     position: relative;
     padding: 0 15px;
   }
+  .qualitys .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .command .container {
     width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .clients .container {
     width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .footer .container {
     display: block;
@@ -91,11 +108,9 @@ img {
     width: 768px;
   }
   .command .container {
-    display: flex;
     width: 768px;
   }
   .clients .container {
-    padding: 0 15px;
     width: 768px;
   }
   .footer .container {
@@ -117,21 +132,17 @@ img {
     width: 1200px;
   }
   .hero .container {
-    width: 696px;
     text-align: center;
   }
   .qualitys .container {
     display: flex;
     width: 1200px;
   }
-  .container .about-list {
-    display: flex;
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+  .about .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .command .container {
-    display: flex;
     width: 1200px;
   }
   .clients .container {
@@ -295,7 +306,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .nav {
-    margin-left: 93px;
+    margin-left: 88px;
   }
 }
 
@@ -310,19 +321,13 @@ img {
   }
 }
 
-.menu-contacts .adress {
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 1200px) {
   .header .adress .list {
     display: flex;
-    margin-left: 305px;
   }
-}
-
-.header .adress .list .header-link {
-  margin-right: 30px;
+  .header .adress .list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -335,7 +340,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header .navigation {
+    padding-top: 21px;
+    padding-bottom: 23px;
+  }
 }
 
 .navigation-list-link {
@@ -453,6 +466,26 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-link {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .header-link,
+  .header-tel-link {
+    color: #757575;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .menu-contacts .adress {
+    margin-left: 84px;
+  }
+}
+
 .portfolio-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -460,7 +493,8 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin: 20px 24px 4px 24px;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 .potfolio-subtitle {

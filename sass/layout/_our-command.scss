@@ -1,7 +1,5 @@
 .names-list {
   display: block;
-  padding-left: 15px;
-  padding-right: 15px;
 
   &-item {
     max-width: 100%;
@@ -23,8 +21,7 @@
 
 .command {
   background-color: #f5f4fa;
-  height: 100%;
-  padding-bottom: 60px;
+  // height: 100%;
 }
 
 .title-our-command {
@@ -35,7 +32,6 @@
   letter-spacing: 0.03em;
   color: $title-light-theme-colour;
   text-align: center;
-  padding-top: 60px;
   padding-bottom: 50px;
 }
 
@@ -68,8 +64,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
 
+    &-item:nth-child(n + 3) {
+      margin-bottom: 0;
+      // width: 354px;
+      // height: 536px;
+    }
     &-item {
       width: 354px;
       height: 536px;
@@ -87,10 +87,8 @@
 
 @media screen and (min-width: 1200px) {
   .names-list {
-    display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 1200px;
 
     &-item {
       width: 270px;
