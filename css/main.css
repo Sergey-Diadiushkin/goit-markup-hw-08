@@ -38,7 +38,6 @@ img {
 }
 
 .container {
-  outline: 1px solid black;
   width: 1200;
   padding: 0 15px;
   margin: 0 auto;
@@ -50,6 +49,18 @@ img {
     margin: 0 auto;
   }
   .clients .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .qualitys .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .command .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -458,9 +469,8 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  margin-left: 32px;
-  margin-right: 32px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-list-link {
@@ -490,25 +500,8 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .social-list {
-    margin-left: 122px;
-    margin-right: 122px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social-list {
-    margin-left: 74px;
-    margin-right: 74px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .social-list {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .navigation-btn {

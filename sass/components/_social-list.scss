@@ -1,9 +1,10 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   // margin-bottom: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
+  // margin-left: 32px;
+  // margin-right: 32px;
 
   &-link {
     display: flex;
@@ -31,24 +32,7 @@
       fill: $title-dark-theme-colour;
     }
   }
-}
-@media screen and (min-width: 480px) {
-  .social-list {
-    margin-left: 122px;
-    margin-right: 122px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social-list {
-    margin-left: 74px;
-    margin-right: 74px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .social-list {
-    margin-left: 32px;
-    margin-right: 32px;
+  &-item:not(:last-child) {
+    margin-right: 10px;
   }
 }

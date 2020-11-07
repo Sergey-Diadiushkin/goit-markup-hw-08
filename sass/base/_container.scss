@@ -1,5 +1,5 @@
 .container {
-  outline: 1px solid black;
+  // outline: 1px solid black;
   width: 1200;
   padding: 0 15px;
   margin: 0 auto;
@@ -11,6 +11,18 @@
     margin: 0 auto;
 
     .clients & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .qualitys & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .footer & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .command & {
       padding-top: 60px;
       padding-bottom: 60px;
     }
