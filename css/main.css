@@ -37,7 +37,7 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 320px) and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
     margin: 0 auto;
@@ -1065,6 +1065,13 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .clients-item {
+    margin-top: 30px;
+    width: calc(53.3% - 30px);
+  }
+}
+
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1097,7 +1104,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
