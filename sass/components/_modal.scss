@@ -6,9 +6,13 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 500ms linear;
-
+  z-index: 999;
   padding: 50px 30px;
   overflow-y: scroll;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   &.is-hidden {
     transition: all 500ms linear 500ms;
@@ -17,13 +21,19 @@
     pointer-events: none;
   }
 }
+@media screen and (min-height: 100px) and (max-height: 450px) {
+  top: 100%;
+}
 
 .modal {
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 100%;
+  // width: 100%;
+  width: 450px;
+
   // height: 609px;
   padding: 40px;
   background-color: #fff;

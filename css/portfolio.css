@@ -16,9 +16,10 @@
   padding: 0;
 }
 
-body {
+body.modal-open {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  overflow: hidden;
 }
 
 .list {
@@ -149,7 +150,6 @@ img {
     width: 1200px;
   }
   .about .container {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
   .command .container {
@@ -503,8 +503,8 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-top: 20px;
-  margin-left: 24px;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
 .potfolio-subtitle {
@@ -514,7 +514,7 @@ img {
   line-height: 1.86;
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 0px 24px 20px 24px;
+  padding: 0px 24px 20px 24px;
 }
 
 .projects-item {
