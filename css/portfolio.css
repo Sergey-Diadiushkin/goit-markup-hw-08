@@ -75,7 +75,6 @@ img {
     text-align: center;
   }
   .header .container {
-    position: relative;
     padding: 0 15px;
   }
   .qualitys .container {
@@ -548,7 +547,7 @@ img {
 }
 
 .item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .overlay {
