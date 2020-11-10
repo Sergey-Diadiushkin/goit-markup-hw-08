@@ -10,10 +10,6 @@
   padding: 50px 30px;
   overflow-y: scroll;
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
   &.is-hidden {
     transition: all 500ms linear 500ms;
     opacity: 0;
@@ -29,9 +25,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
-  // width: 450px;
 
-  // height: 609px;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
@@ -99,13 +93,6 @@
   }
 }
 
-// @media screen and (min-width: 480px) {
-//   .modal-container {
-//     position: relative;
-//     width: 450px;
-//   }
-// }
-
 .close-btn {
   display: flex;
   justify-content: center;
@@ -134,8 +121,6 @@
 }
 
 .contact-form {
-  // width: 370px;
-  // height: 342px;
   margin: 0 auto;
 
   &-input {

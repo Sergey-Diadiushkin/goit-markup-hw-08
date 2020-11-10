@@ -49,6 +49,9 @@ img {
     width: 100%;
     margin: 0 auto;
   }
+  .hero .container {
+    text-align: center;
+  }
   .clients .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -101,12 +104,6 @@ img {
   .projects .container {
     width: 480px;
     padding: 60px 15px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .hero .container {
-    text-align: center;
   }
 }
 
@@ -535,6 +532,7 @@ img {
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 4px;
+  border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

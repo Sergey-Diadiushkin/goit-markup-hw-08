@@ -10,6 +10,9 @@
     width: 100%;
     margin: 0 auto;
 
+    .hero & {
+      text-align: center;
+    }
     .clients & {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -34,11 +37,9 @@
     margin: 0 auto;
 
     .hero & {
-      // width: 360px;
       text-align: center;
     }
     .header & {
-      // position: relative;
       padding: 0 15px;
     }
 
@@ -65,15 +66,7 @@
     .projects & {
       width: 480px;
       padding: 60px 15px;
-      // margin-top: 94px;
-      // margin-bottom: 94px;
     }
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .hero .container {
-    text-align: center;
   }
 }
 
